@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --rb-bg: #0f1621;
+  --rb-card: #141b26;
+  --rb-card-alt: #0b111a;
+  --rb-text: #e6edf3;
+  --rb-text-dim: #9fb0c0;
+  --rb-accent: #ff7a1a;
+  --rb-accent-soft: #ff7a1a22;
+  --rb-border: #24303f;
+  --rb-positive: #22c55e;
+  --rb-negative: #ef4444;
+}
+body { background: var(--rb-bg); color: var(--rb-text); }
