@@ -1,13 +1,7 @@
 "use client";
 import React from "react";
 
-/**
- * Reactor — Informbook UI (Step 2: layout only)
- * Next 14 + Tailwind. Без данных — только верстка.
- */
-
 export default function MatchDemo() {
-  // Pinnacle-style тема (локально для файла)
   const theme = {
     bg: "#0f1621",
     card: "#141b26",
@@ -28,7 +22,6 @@ export default function MatchDemo() {
       style={{
         backgroundColor: theme.bg,
         color: theme.text,
-        // CSS vars (если захотим переиспользовать в стилях)
         // @ts-ignore
         "--rb-bg": theme.bg,
         "--rb-card": theme.card,
@@ -43,7 +36,7 @@ export default function MatchDemo() {
         "--rb-glow": theme.glow,
       }}
     >
-      {/* ЦЕНТРИРУЮЩИЙ КОНТЕЙНЕР */}
+      {/* Центрирующий контейнер */}
       <div className="mx-auto w-full max-w-7xl px-6 py-6">
         {/* Header */}
         <header
@@ -193,7 +186,7 @@ export default function MatchDemo() {
   );
 }
 
-/* ========== UI bits ========== */
+/* ===== UI bits ===== */
 
 function InfoPill({ label, value }: { label: string; value: string }) {
   return (
